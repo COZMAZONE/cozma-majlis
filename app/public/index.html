@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المجلس: التاجر، الكريتيف، الماركتينج</title>
+  <meta name="description" content="ثلاث مجالس لقرارات متجرك: التاجر، الكريتيف والتصميم، والماركتينج. مقاعد محاكاة يتناقشون في قرارك على الطاولة ويطلعون لك بحكم واضح.">
+  <link rel="icon" href="brand/majlis-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="مجلس التاجر">
+      <img class="brand-mark" src="brand/majlis-mark.svg" alt="">
+      <span class="brand-words">
+        <span class="brand-name">مجلس <em>التاجر</em></span>
+        <span class="brand-sub">قرارك الصعب… قدام المجلس</span>
+      </span>
+    </a>
+    <span class="council-pill" id="councilPill" title="المجلس على الطاولة"><i aria-hidden="true"></i><span id="councilName">مجلس التاجر</span></span>
+    <ol class="stepper" id="stepper" aria-label="مراحل المجلس">
+      <li data-step="setup">الملخّص</li>
+      <li data-step="round1">الافتتاح</li>
+      <li data-step="cruxes">نقاط الخلاف</li>
+      <li data-step="round2">النقاش</li>
+      <li data-step="round3">التصويت</li>
+      <li data-step="verdict">الحكم</li>
+    </ol>
+    <div class="top-actions">
+      <span class="usage" id="usage" title="الاستهلاك منذ تشغيل التطبيق"></span>
+      <button class="ghost studio-btn" id="studioBtn" type="button" hidden aria-controls="studio"><i aria-hidden="true"></i>المعرض <b id="studioCount" class="num"></b></button>
+      <button class="ghost" id="guideBtn" type="button">كيف يشتغل؟</button>
+      <button class="ghost" id="historyBtn" type="button">الجلسات السابقة</button>
+      <button class="ghost" id="newBtn" type="button" hidden>سؤال جديد</button>
+    </div>
+  </header>
+
+  <div class="topic" id="topic" hidden>
+    <div class="topic-main">
+      <div class="label"><span data-council-label></span>على الطاولة</div>
+      <h1 id="topicTitle"></h1>
+    </div>
+    <div class="options" id="options"></div>
+  </div>
+
+  <main class="layout">
+    <section class="stage-wrap" aria-label="طاولة المجلس">
+      <div class="stage" id="stage">
+        <div class="wall" aria-hidden="true"></div>
+        <p class="stage-note" id="stageNote">كل المقاعد <b>محاكاة</b> مبنية من أعمال كل شخص المنشورة. ليسوا هم، ولا يتكلمون باسمهم، ولا علاقة لهم بهذا المنتج.</p>
+        <div class="spot" id="spot" aria-hidden="true"></div>
+        <div id="seats"></div>
+        <div class="table" id="table" aria-hidden="true"><span class="etch" id="tableEtch"></span></div>
+        <div id="plates"></div>
+        <svg class="links" id="links" aria-hidden="true"></svg>
+
+        <div class="center" id="center">
+          <div class="waiting" id="waiting" hidden>
+            <span class="pulse"><i></i>المجلس مفتوح</span>
+            <h2 data-type>هات قرارك الصعب للمجلس</h2>
+            <p>اختر المجلس، وفي Claude Code اكتب السطر اللي تحت ومعه قرارك. المجلس يجلس هنا ويتناقش فيه قدامك.</p>
+            <div class="council-tabs" id="councilTabs" role="group" aria-label="المجالس"></div>
+            <code dir="ltr" id="waitCmd">/majlis …</code>
+            <div class="row"><button class="ghost" type="button" id="waitGuide">وش أكتب في سؤالي؟</button><button class="ghost" type="button" id="waitHistory">شاهد جلسة سابقة</button></div>
+          </div>
+
+          <form class="composer" id="composer" hidden>
+            <h2 data-type>وش القرار اللي تحتاج فيه رأي؟</h2>
+            <textarea id="prompt" rows="3" placeholder="اكتب القرار، وخياراتك، وكم رقم (مبيعات، كاش، فريق)، ووين تميل الحين." required minlength="10"></textarea>
+            <div class="samples" id="samples"></div>
+            <div class="composer-row">
+              <div class="mode" role="radiogroup" aria-label="حجم المجلس">
+                <label><input type="radio" name="mode" value="full" checked><span>المجلس الكامل <small>كل المقاعد، ٣ جولات</small></span></label>
+                <label><input type="radio" name="mode" value="quick"><span>سريع <small>٤ مقاعد، جولتين</small></span></label>
+              </div>
+              <button class="convene" type="submit" id="convene">اعقد المجلس</button>
+            </div>
+          </form>
+
+          <div class="caption" id="caption" hidden>
+            <div class="cap-head">
+              <span class="cap-av" id="capAv"></span>
+              <span class="cap-who" id="capWho"></span>
+              <span class="cap-tag" id="capTag"></span>
+            </div>
+            <p class="cap-text" id="capText"></p>
+            <div class="cap-sub" id="capSub"></div>
+          </div>
+
+          <div class="waitcard" id="waitcard" hidden aria-live="polite">
+            <div class="wc-top"><span class="wc-step" id="wcStep"></span><span class="wc-time" id="wcTime"></span></div>
+            <p class="wc-head" id="wcHead"></p>
+            <p class="wc-sub" id="wcSub"></p>
+            <p class="wc-muse" id="wcMuse"></p>
+            <div class="wc-bar"><i id="wcBar"></i></div>
+            <p class="wc-nudge" id="wcNudge" hidden>ما فيه جديد من فترة؟ شيّك على Claude Code، يمكن ينتظر منك جواب أو موافقة.</p>
+          </div>
+
+          <div class="cruxes" id="cruxes" hidden></div>
+          <div class="plate" id="plate" hidden></div>
+        </div>
+
+        <div class="playbar" id="playbar" hidden>
+          <span class="queue" id="queueInfo"></span>
+          <div class="speed" role="radiogroup" aria-label="سرعة العرض">
+            <button type="button" data-speed="1" aria-pressed="true">1x</button>
+            <button type="button" data-speed="1.6" aria-pressed="false">1.6x</button>
+            <button type="button" data-speed="2.5" aria-pressed="false">2.5x</button>
+          </div>
+          <button type="button" class="skip" id="skipBtn">تخطَّ للأمام</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel" aria-label="أهم النقاط">
+      <div class="panel-head" id="panelHead">أهم النقاط</div>
+      <div class="tabpanel" id="feed">
+        <div class="empty">سطر من كل مقعد وهو يتكلم. اضغط على أي مقعد لقراءة بطاقته كاملة.</div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- «المعرض»: the studio wall. Designs land here live as /majlis studio renders them. -->
+  <section class="studio" id="studio" hidden aria-label="المعرض">
+    <header class="sd-head">
+      <div class="sd-title">
+        <span class="sd-kicker">الاستوديو · من الحكم إلى التصميم</span>
+        <h2>المعرض</h2>
+        <p class="sd-sub" id="sdSub"></p>
+      </div>
+      <div class="sd-actions">
+        <button class="ghost" id="sdPlay" type="button">شغّل العرض</button>
+        <a class="pill" id="sdAll" target="_blank" rel="noopener">تحميل الكل</a>
+        <button class="ghost" id="sdClose" type="button">رجوع للطاولة</button>
+      </div>
+    </header>
+    <div class="sd-filters" id="sdFilters" role="toolbar" aria-label="تصفية التصاميم"></div>
+    <div class="sd-empty" id="sdEmpty" hidden><span class="pulse"><i></i>الاستوديو شغّال</span><p>أول تصميم يوصل يظهر هنا، والمقعد اللي صممه يشرح فكرته على الطاولة.</p></div>
+    <div class="sd-wall" id="sdWall" aria-live="polite"></div>
+    <p class="sd-note">كل تصميم هنا مقترح من مقعد <b>محاكاة</b> مبني من أعمال صاحبه المنشورة، وليس من الشخص نفسه. الصور مولّدة بدون نص، والكتابة عربية حقيقية فوقها. راجع كل تصميم قبل أي نشر.</p>
+  </section>
+
+  <dialog id="sdBox" class="sd-box" aria-label="التصميم">
+    <div id="sdBoxBody"></div>
+  </dialog>
+
+  <div class="sheet" id="verdictSheet" hidden>
+    <div class="sheet-inner" id="verdictBody"></div>
+  </div>
+
+  <dialog id="cardDialog" class="card-dialog">
+    <div id="cardBody"></div>
+    <form method="dialog"><button class="ghost">إغلاق</button></form>
+  </dialog>
+
+  <dialog id="guideDialog" class="card-dialog">
+    <div id="guideBody"></div>
+    <form method="dialog"><button class="ghost">إغلاق</button></form>
+  </dialog>
+
+  <dialog id="historyDialog" class="card-dialog">
+    <h3>الجلسات السابقة</h3>
+    <p class="muted">أعد تشغيل أي مجلس زي ما صار بالضبط.</p>
+    <ul class="history" id="historyList"></ul>
+    <form method="dialog"><button class="ghost">إغلاق</button></form>
+  </dialog>
+
+  <div class="toast" id="toast" hidden></div>
+  <footer class="site-foot">
+    <p class="disclaimer"><b>تنبيه:</b> مقاعد محاكاة مبنية من أعمال كل شخص المنشورة. ليسوا هم، ولا يتكلمون باسمهم، ولا علاقة لهم بهذا المنتج. «صوت العميل» شخصية مركّبة من تقييمات عملاء متجرك، وليس عميلًا بعينه. الحكم نقاش تجاري، وليس استشارة مالية أو قانونية.</p>
+    <p class="credit">المجلس: التاجر · الكريتيف والتصميم · الماركتينج · لتجار سلة وزد في السعودية والخليج · مشتق من <bdi>Roast Room (MIT)</bdi></p>
+  </footer>
+  </div>
+
+  <!-- the verdict report, rendered here only when printing / saving as PDF -->
+  <div class="print-view" id="printView" aria-hidden="true"></div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

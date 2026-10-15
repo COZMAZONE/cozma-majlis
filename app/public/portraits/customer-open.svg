@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">
+<!-- «صوت العميل» (open): an abstract composite of the store's customers, seen from behind. Not a portrait of any person. -->
+<defs>
+  <linearGradient id="ghutra" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#eef1f3"/><stop offset="1" stop-color="#c2cad0"/></linearGradient>
+  <linearGradient id="ghutraEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa6ae" stop-opacity="0"/><stop offset="1" stop-color="#8794a0" stop-opacity=".55"/></linearGradient>
+  <linearGradient id="thobe" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#f7f9fa"/><stop offset="0.6" stop-color="#dde3e7"/><stop offset="1" stop-color="#aeb8bf"/></linearGradient>
+  <linearGradient id="abaya" x1="0.05" y1="0" x2="0.95" y2="1"><stop offset="0" stop-color="#444a57"/><stop offset="0.45" stop-color="#262a33"/><stop offset="1" stop-color="#121419"/></linearGradient>
+  <radialGradient id="crown" cx="0.4" cy="0.25" r="0.6"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="kraft" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4cca4"/><stop offset="1" stop-color="#b08b5e"/></linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#d6e8ff" stop-opacity="0.75"/><stop offset="0.45" stop-color="#a9c7e8" stop-opacity="0.28"/><stop offset="1" stop-color="#a9c7e8" stop-opacity="0"/></radialGradient>
+  <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2b394"/><stop offset="1" stop-color="#a7735a"/></linearGradient>
+  <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+
+<!-- the screen light between them, behind their heads -->
+<ellipse cx="282" cy="258" rx="160" ry="146" fill="url(#glow)"/>
+
+<!-- left: shayla and abaya, from behind, head turned in toward the phone -->
+<g>
+  <path fill="url(#abaya)" d="M196 116 C148 116 124 156 124 206 C124 250 134 282 148 302 C118 322 96 352 86 400 L70 560 L322 560 L310 400 C302 352 282 322 254 302 C266 282 268 250 268 206 C268 156 244 116 196 116 Z"/>
+  <path fill="url(#crown)" d="M196 116 C148 116 124 156 124 206 C124 250 134 282 148 302 L254 302 C266 282 268 250 268 206 C268 156 244 116 196 116 Z"/>
+  <path d="M268 206 C268 250 266 282 254 302 C282 322 302 352 310 400" fill="none" stroke="#cfe3fb" stroke-opacity="0.65" stroke-width="4" stroke-linecap="round" filter="url(#blur)"/>
+  <path d="M268 200 C268 250 266 282 254 302" fill="none" stroke="#e6f1ff" stroke-opacity="0.55" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M150 158 C166 132 186 124 206 124" fill="none" stroke="#7a8395" stroke-opacity=".5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M150 330 C140 370 132 410 126 450 M200 330 C202 380 200 420 198 470 M250 330 C262 370 270 410 276 450" fill="none" stroke="#0d0f13" stroke-opacity=".35" stroke-width="5" stroke-linecap="round" filter="url(#blur)"/>
+</g>
+
+<!-- paper bag in her hand, low -->
+<g transform="rotate(-5 128 486)">
+  <path d="M100 440 C100 404 156 404 156 440" fill="none" stroke="#8a6a44" stroke-width="7" stroke-linecap="round"/>
+  <rect x="70" y="436" width="118" height="140" rx="6" fill="url(#kraft)"/>
+  <rect x="70" y="436" width="118" height="14" rx="4" fill="#fff" opacity=".2"/>
+  <rect x="70" y="436" width="22" height="140" fill="#000" opacity=".08"/>
+</g>
+
+<!-- right: thobe shoulders, from behind -->
+<path fill="url(#thobe)" d="M214 560 C218 446 270 404 366 400 C462 404 512 446 516 560 Z"/>
+
+<!-- ghutra draped over the head and down the back -->
+<path fill="url(#ghutra)" d="M366 98 C312 98 282 142 280 192 C278 244 276 302 258 360 C250 392 246 420 244 444 C306 458 426 458 488 444 C484 420 480 392 472 360 C454 302 452 244 450 192 C448 142 420 98 366 98 Z"/>
+<path fill="url(#ghutraEdge)" d="M258 360 C250 392 246 420 244 444 C306 458 426 458 488 444 C484 420 480 392 472 360 C440 380 300 380 258 360 Z"/>
+<path d="M330 150 C318 230 306 330 290 440 M366 150 C366 250 366 340 366 452 M402 150 C414 230 428 330 446 444" fill="none" stroke="#a9b4bc" stroke-opacity=".38" stroke-width="3" stroke-linecap="round"/>
+<path d="M280 192 C278 244 276 302 258 360 C250 392 246 420 244 444" fill="none" stroke="#e6f1ff" stroke-opacity="0.70" stroke-width="3" stroke-linecap="round"/>
+
+<!-- agal on the crown, with its two cords down the back -->
+<ellipse cx="366" cy="150" rx="60" ry="12" fill="none" stroke="#16181d" stroke-width="10"/>
+<ellipse cx="366" cy="163" rx="64" ry="12" fill="none" stroke="#22252b" stroke-width="7"/>
+<path d="M318 143 C334 137 350 135 366 135" fill="none" stroke="#666d78" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- the phone, held up between them (we see its back; the screen faces them) -->
+<g transform="rotate(8 262 300)">
+  <path d="M244 352 C238 330 246 316 258 318 L276 322 C286 324 288 340 282 356 Z" fill="url(#skin)"/>
+  <rect x="236" y="246" width="56" height="100" rx="12" fill="#1a1d22"/>
+  <rect x="236" y="246" width="56" height="100" rx="12" fill="none" stroke="#d6e8ff" stroke-opacity="0.85" stroke-width="2.5"/>
+  <circle cx="252" cy="262" r="6" fill="#2b3038"/><circle cx="252" cy="262" r="2.5" fill="#5c6878"/>
+</g>
+</svg>

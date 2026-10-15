@@ -1,0 +1,17 @@
+{
+  "env": {
+    "CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS": "30"
+  },
+  "permissions": {
+    "allow": [
+      "Edit(/sessions/**)",
+      "Edit(/business.md)",
+      "Edit(/.claude/skills/majlis/brains/store-customer/**)",
+      "Bash(python .claude/skills/majlis/scripts/check_quotes.py:*)",
+      "Bash(python3 .claude/skills/majlis/scripts/check_quotes.py:*)",
+      "Bash(node .claude/skills/majlis/scripts/publish.mjs:*)",
+      "Bash(node .claude/skills/majlis/scripts/export-replay.mjs:*)",
+      "Bash(node .claude/skills/majlis/scripts/studio.mjs:*)"
+    ]
+  }
+}

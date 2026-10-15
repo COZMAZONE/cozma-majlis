@@ -1,0 +1,14 @@
+{
+  "key": "bernbach",
+  "slug": "bill-bernbach",
+  "name": "بيل برنباك",
+  "short": "Bernbach",
+  "initials": "BB",
+  "pillar": "The big creative idea and execution",
+  "pillarAr": "الفكرة الإبداعية الكبيرة وتنفيذها",
+  "question": "هل في هذا العمل فكرة طازجة، منفّذة بحيث يحسّها الناس ويتذكرونها؟",
+  "dimension": "Idea strength",
+  "dimensionAr": "قوة الفكرة",
+  "color": "#C0392B",
+  "council": "creative"
+}

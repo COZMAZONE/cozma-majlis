@@ -1,0 +1,5 @@
+# majlis:start
+# «المجلس»: originals of studio designs stay off git (light JPEGs are committed); secrets never.
+sessions/*/studio/raw/
+.env
+# majlis:end

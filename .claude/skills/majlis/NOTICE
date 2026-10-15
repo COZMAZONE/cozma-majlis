@@ -1,0 +1,20 @@
+مجلس التاجر (Merchant Council)
+
+This product is derived from "Roast Room" (https://github.com/nateherkai/roast-room),
+Copyright (c) 2026 AI Automation Society, released under the MIT License (see LICENSE).
+The original seat brains, agent definitions, caricature portraits, room app, and quote
+checker come from Roast Room and are used under that license.
+
+It has been substantially modified:
+- Rebuilt as an Arabic, right-to-left product for Saudi and Gulf e-commerce merchants
+  (Salla, Zid): Arabic seat instructions, round prompts, report, room UI, and PDF export.
+- A new per-store customer seat («صوت العميل») built from the merchant's own reviews at
+  onboarding, with an abstract, gender-neutral avatar and quote verification.
+- A new onboarding interview, store profile template, and an Arabic example session for a
+  fictional store.
+- Honesty safeguards: a «محاكاة» tag on every seat and a disclaimer on the home page,
+  every verdict, and every PDF.
+
+The seven expert seats are simulations built from each person's published work. They are
+not those people, do not speak for them, and have no affiliation with this product. Names
+are used to identify the source of the ideas; any trademarks shown belong to their owners.
