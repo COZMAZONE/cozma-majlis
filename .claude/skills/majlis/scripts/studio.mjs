@@ -170,6 +170,8 @@ const PALETTES = {
   "night": { bg: "#0e1521", ink: "#ece2cc", mute: "#9aa3b2", accent: "#cfab6a", panel: "#141d2c" },
   "paper": { bg: "#f7f5f0", ink: "#151412", mute: "#77736b", accent: "#151412", panel: "#efece5" },
   "ugc": { bg: "#ffffff", ink: "#111111", mute: "#555", accent: "#111", panel: "#fff" },
+  "plum": { bg: "#502747", ink: "#f7eef4", mute: "#d9c2d2", accent: "#f0c9a4", panel: "#43203b" },
+  "plum-light": { bg: "#f8f2f6", ink: "#2c1427", mute: "#7c6276", accent: "#502747", panel: "#eee2ea" },
 };
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 // line breaks: the brief may use " / " or "\n" to set its own breaks; type is set, not wrapped by chance
@@ -310,7 +312,7 @@ p{font:400 27px/1.7 'IBM Plex Sans Arabic';color:var(--mute);margin-bottom:40px}
 .cta{display:inline-flex;gap:24px;align-items:center}
 .btn{background:var(--accent);color:var(--bg);font:600 24px 'IBM Plex Sans Arabic';padding:18px 40px;border-radius:999px}
 .price{font:500 24px 'IBM Plex Sans Arabic';color:var(--ink)}`,
-      body: `<div class="vis"></div><nav>${brandMark(brand)}<div class="links"><span>العود</span><span>العطور</span><span>الهدايا</span><span>قصتنا</span></div></nav><div class="txt">${b.hook_ar ? `<div class="kick">${esc(b.hook_ar)}</div>` : ""}<h1>${lines(b.headline_ar)}</h1>${b.subline_ar ? `<p>${lines(b.subline_ar)}</p>` : ""}<div class="cta"><span class="btn">${esc(b.cta_ar || "تسوّق الهدايا")}</span>${priceTag(b)}</div></div>` });
+      body: `<div class="vis"></div><nav>${brandMark(brand)}<div class="links">${(brand.nav_ar || ["العود", "العطور", "الهدايا", "قصتنا"]).map((n) => `<span>${esc(n)}</span>`).join("")}</div></nav><div class="txt">${b.hook_ar ? `<div class="kick">${esc(b.hook_ar)}</div>` : ""}<h1>${lines(b.headline_ar)}</h1>${b.subline_ar ? `<p>${lines(b.subline_ar)}</p>` : ""}<div class="cta"><span class="btn">${esc(b.cta_ar || "تسوّق الهدايا")}</span>${priceTag(b)}</div></div>` });
   },
 
   // ---------------- identity (Chris Do): marks are type, built in code, so they stay sharp and editable
