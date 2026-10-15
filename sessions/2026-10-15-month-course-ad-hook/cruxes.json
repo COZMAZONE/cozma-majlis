@@ -1,0 +1,29 @@
+{
+  "cruxes": [
+    {
+      "question": "وظيفة الإعلان: يوقّف المترددة، ولا يرفع السلة؟",
+      "sides": [
+        { "position": "يوقّف، والسلّم في الصفحة", "seats": ["Schwartz", "Jobs", "Sutherland", "Denney", "Bernbach", "Customer"] },
+        { "position": "يرفع السلة، هذا هدف البريف", "seats": ["Ogilvy", "Chris Do"] },
+        { "position": "يوضّح المنتج بس", "seats": ["Rams"] }
+      ]
+    },
+    {
+      "question": "هل أرقام B صادقة وتعيش بعد 28 أكتوبر؟",
+      "sides": [
+        { "position": "لا: 890 عرض موسمي و495 تتغير", "seats": ["Customer", "Sutherland", "Rams", "Denney"] },
+        { "position": "نعم: أرقام حقيقية من سلة", "seats": ["Ogilvy", "Chris Do"] }
+      ]
+    },
+    {
+      "question": "«مترددة» و«جرّبي»: نخليها ولا نغيّرها؟",
+      "sides": [
+        { "position": "المؤنث يطلّع 38% رجال", "seats": ["Rams", "Ogilvy", "Chris Do"] },
+        { "position": "«ابدئي» بدل «جرّبي»", "seats": ["Jobs", "Sutherland", "Schwartz"] },
+        { "position": "نخليها زي ما هي", "seats": ["Customer", "Denney", "Bernbach"] }
+      ]
+    }
+  ],
+  "unanimous": false,
+  "note": "الأغلبية مع هوك التردد، والخلاف على وظيفة الإعلان وصدق أرقام حسبة الشهر."
+}
