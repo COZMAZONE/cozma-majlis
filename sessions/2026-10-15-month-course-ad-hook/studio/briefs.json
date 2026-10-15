@@ -520,6 +520,243 @@
     "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
    },
    "rationale_ar": "الإعلان يفتح الباب، والصفحة تعرض السلّم. الاثنين تجربة وحدة."
+  },
+  {
+   "id": "d19",
+   "seat": "chrisdo",
+   "angle": "صفحة المنتج: السلّم",
+   "awareness": "most-aware",
+   "hook_ar": "كوزما كولاجين",
+   "headline_ar": "ابدئي بالشهر، / أو كمّلي بالباقة الأكبر.",
+   "subline_ar": "شهر 495 ر.س · شهرين + شهر هدية 890 ر.س · 3 أشهر 1,330 ر.س. والماسك هدية مع كل كورس.",
+   "price_ar": "",
+   "cta_ar": "اختاري باقتك",
+   "facts": [],
+   "format": "lp-hero",
+   "layout": "hero",
+   "palette": "plum",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "كل أداة لها مقياس: الصفحة تنقاس بنسبة اللي يختارون الباقة الأكبر."
+  },
+  {
+   "id": "d20",
+   "seat": "chrisdo",
+   "angle": "صفحة المنتج: السلّم",
+   "awareness": "most-aware",
+   "hook_ar": "كوزما كولاجين",
+   "headline_ar": "البداية شهر واحد. / والماسك هدية مع كل كورس.",
+   "subline_ar": "كل الباقات بأسعار سلة الحقيقية، والاختيار لك.",
+   "price_ar": "495 ر.س · 890 ر.س · 1,330 ر.س",
+   "cta_ar": "اختاري باقتك",
+   "facts": [],
+   "format": "lp-hero",
+   "layout": "hero",
+   "palette": "plum-light",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "الهدية توقيع البراند على كل الكورسات، مو ديكور. تظهر بنفس الشكل في كل مكان."
+  },
+  {
+   "id": "d21",
+   "seat": "denney",
+   "angle": "ابدئي بشهر",
+   "awareness": "product-aware",
+   "hook_ar": "مترددة؟ ابدئي بكوزما كولاجين شهر واحد، والماسك علينا",
+   "headline_ar": "مترددة؟ ابدئي بكوزما كولاجين / شهر واحد",
+   "subline_ar": "والماسك علينا",
+   "price_ar": "",
+   "cta_ar": "",
+   "facts": [],
+   "format": "9:16",
+   "layout": "sticker",
+   "palette": "ugc",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "شكل ستوري native، مو إعلان. البطل في الاختبار، ونحكم عليه بتكلفة الطلب."
+  },
+  {
+   "id": "d22",
+   "seat": "denney",
+   "angle": "ابدأ بشهر (رجال)",
+   "awareness": "product-aware",
+   "hook_ar": "متردد؟ ابدأ بكوزما كولاجين شهر واحد، والماسك علينا",
+   "headline_ar": "متردد؟ ابدأ بكوزما كولاجين / شهر واحد",
+   "subline_ar": "والماسك علينا",
+   "price_ar": "",
+   "cta_ar": "",
+   "facts": [],
+   "format": "9:16",
+   "layout": "sticker",
+   "palette": "ugc",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "تنويعة الرجال بنفس الشكل، على مجموعة إعلانية مستقلة."
+  },
+  {
+   "id": "d23",
+   "seat": "denney",
+   "angle": "المرجع: الإعلان الحالي",
+   "awareness": "product-aware",
+   "hook_ar": "كورس شهر + ماسك هدية",
+   "headline_ar": "كورس كوزما كولاجين شهر / + ماسك هدية",
+   "subline_ar": "المرجع",
+   "price_ar": "",
+   "cta_ar": "",
+   "facts": [],
+   "format": "9:16",
+   "layout": "sticker",
+   "palette": "ugc",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "A بنفس الشكل عشان نقارن الكلام بس. أي تنويعة تصرف ضعف تكلفة الطلب بدون طلب توقف."
+  },
+  {
+   "id": "d24",
+   "seat": "denney",
+   "angle": "ابدئي بشهر",
+   "awareness": "product-aware",
+   "hook_ar": "مترددة؟ ابدئي بكوزما كولاجين شهر واحد، والماسك علينا",
+   "headline_ar": "مترددة؟ / ابدئي بشهر واحد",
+   "subline_ar": "والماسك علينا. (هنا صورة حقيقية للماسك مفتوح)",
+   "price_ar": "",
+   "cta_ar": "",
+   "facts": [],
+   "format": "4:5",
+   "layout": "sticker",
+   "palette": "ugc",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "مكان تنويعة الماسك المفتوح: نفس السطر، والفرق الصورة. تحتاج تصوير حقيقي للماسك قبل النشر."
+  },
+  {
+   "id": "d25",
+   "seat": "customer",
+   "angle": "ابدئي بشهر",
+   "awareness": "product-aware",
+   "hook_ar": "مترددة؟ ابدئي بكوزما كولاجين شهر واحد، والماسك علينا",
+   "headline_ar": "مترددة؟ / ابدئي بشهر واحد",
+   "subline_ar": "",
+   "price_ar": "",
+   "cta_ar": "ابدئي بالشهر",
+   "facts": [
+    "الماسك هدية مع كل كورس شهر",
+    "قسّطيها مع تمارا وتابي",
+    "الشحن مجاني، والتوصيل عادة من 2 إلى 5 أيام"
+   ],
+   "format": "4:5",
+   "layout": "trust",
+   "palette": "plum-light",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "احنا نوقف لما نشوف كلمتنا، ونكمل لما نشوف وش يوصل وكيف ندفع. بدون وعود ما تنوفى."
+  },
+  {
+   "id": "d26",
+   "seat": "customer",
+   "angle": "ابدئي بشهر",
+   "awareness": "product-aware",
+   "hook_ar": "مترددة؟ ابدئي بكوزما كولاجين شهر واحد، والماسك علينا",
+   "headline_ar": "مترددة؟ / ابدئي بشهر واحد",
+   "subline_ar": "",
+   "price_ar": "",
+   "cta_ar": "ابدئي بالشهر",
+   "facts": [
+    "الماسك هدية مع كل كورس شهر",
+    "قسّطيها مع تمارا وتابي",
+    "الشحن مجاني، والتوصيل عادة من 2 إلى 5 أيام"
+   ],
+   "format": "9:16",
+   "layout": "trust",
+   "palette": "plum-light",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "نفس الحقائق بمقاس الستوري. الشحن مكتوب مثل ما يوعد الموقع بالضبط، مو أسرع."
+  },
+  {
+   "id": "d27",
+   "seat": "customer",
+   "angle": "ابدأ بشهر (رجال)",
+   "awareness": "product-aware",
+   "hook_ar": "متردد؟ ابدأ بكوزما كولاجين شهر واحد، والماسك علينا",
+   "headline_ar": "متردد؟ / ابدأ بشهر واحد",
+   "subline_ar": "",
+   "price_ar": "",
+   "cta_ar": "ابدأ بالشهر",
+   "facts": [
+    "الماسك هدية مع كل كورس شهر",
+    "قسّطها مع تمارا وتابي",
+    "الشحن مجاني، والتوصيل عادة من 2 إلى 5 أيام"
+   ],
+   "format": "4:5",
+   "layout": "trust",
+   "palette": "plum-light",
+   "visual_file": "",
+   "visual_prompt_en": "",
+   "visual_check": {
+    "faces": "none",
+    "modest": true,
+    "halal": true,
+    "ai_person": false,
+    "note": "تصميم طباعي بدون صورة مولّدة، والمنتج الحقيقي ينحط من صور المتجر"
+   },
+   "rationale_ar": "الرجال اللي يشترون غالبًا لزوجة أو أم أو لنفسهم بصمت (افتراض). نفس الحقائق بصيغتهم."
   }
  ]
 }
